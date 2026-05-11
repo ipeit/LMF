@@ -1,41 +1,81 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 40px;
-    background-color: #f5f5f5;
+    margin: 0;
+    background-color: #eef2f5;
     color: #333;
 }
 
+/* CONTENEUR PRINCIPAL */
 .container {
-    max-width: 1000px;
-    margin: auto;
+    max-width: 1100px;
+    margin: 30px auto;
     background: white;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-.header {
+/* MENU */
+.navbar {
+    background: #2c3e50;
+    padding: 15px;
     display: flex;
-    align-items: center;
     gap: 20px;
 }
 
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .logo {
-    width: 100px;   
+    width: 110px;
     height: auto;
 }
 
+/* TITRES */
 h1 {
     color: #2c3e50;
+    margin-bottom: 5px;
 }
 
 h2 {
-    color: blue;
+    color: #1f6feb;
     margin-top: 30px;
 }
 
+h3 {
+    color: #2c3e50;
+}
+
+/* TEXTES */
+p {
+    line-height: 1.6;
+}
+
+/* LISTES */
 ul {
     line-height: 1.8;
+    margin-top: 5px;
 }
+
+/* =========================
+   PROJETS (ACCORDÉON)
+   ========================= */
+
 .project-list {
     margin-top: 20px;
 }
@@ -54,15 +94,19 @@ ul {
     background: #34495e;
 }
 
+/* animation ouverture */
 .project-details {
     display: none;
     background: #ffffff;
     padding: 20px;
-    border-left: 4px solid #2c3e50;
+    border-left: 5px solid #1f6feb;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 6px;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
-ul {
-    margin-top: 5px;
+/* effet apparition */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
 }
