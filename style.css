@@ -15,13 +15,13 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    \*justify-content: space-between;*\
     align-items: center;
     gap: 20px;
 }
 
 .logo {
-    width: 120px;   /* 🔥 augmente ici (10px était la cause du problème) */
+    width: 100px;   
     height: auto;
 }
 
