@@ -110,3 +110,20 @@ ul {
     from { opacity: 0; transform: translateY(-5px); }
     to { opacity: 1; transform: translateY(0); }
 }
+h2 {
+    color: blue; /* comme tu voulais */
+    margin-top: 30px;
+}
+
+.logo {
+    width: 110px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
