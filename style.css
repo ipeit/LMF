@@ -6,6 +6,7 @@ body {
 }
 .header {
     display: flex;
+    justify-content: space-between; /* texte à gauche, logo à droite */
     align-items: center;   /* centre verticalement */
     gap: 20px;              /* espace entre logo et texte */
 }
