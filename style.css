@@ -6,7 +6,7 @@ body {
 }
 .header {
     display: flex;
-    align-items: left;   /* centre verticalement */
+    align-items: center;   /* centre verticalement */
     gap: 20px;              /* espace entre logo et texte */
 }
 
