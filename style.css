@@ -115,15 +115,14 @@ h2 {
     margin-top: 30px;
 }
 
-.logo {
-    width: 110px;
-    height: auto;
-    border-radius: 5px;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+}
+
+.logo {
+    width: 110px;
+    height: auto;
+    margin-left: auto;
 }
