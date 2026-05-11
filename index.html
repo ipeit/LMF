@@ -2,14 +2,24 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Laboratoire de Recherche</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Laboratoire LMF</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<!-- MENU -->
+<nav class="navbar">
+    <a href="index.html">Accueil</a>
+    <a href="projets.html">Projets</a>
+    <a href="equipe.html">Équipe</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
 <div class="container">
 
+    <!-- HEADER -->
     <div class="header">
 
         <div class="text">
@@ -17,12 +27,18 @@
             <p>Institut Préparatoire aux Études d'Ingénieurs de Tunis</p>
         </div>
 
-        <img src="ipeit.jpeg" class="logo" alt="Logo du laboratoire">
+        <img src="images/ipeit.jpeg" class="logo" alt="Logo du laboratoire">
 
     </div>
 
-    <p>Bienvenue sur le site officiel du laboratoire.</p>
+    <!-- ACCUEIL -->
+    <h2>Bienvenue</h2>
+    <p>
+        Bienvenue sur le site officiel du Laboratoire LMF.
+        Ce site présente nos activités de recherche, nos projets et notre équipe.
+    </p>
 
+    <!-- AXES -->
     <h2>Axes de recherche</h2>
     <ul>
         <li>Océanographie physique</li>
@@ -30,68 +46,17 @@
         <li>Modélisation numérique</li>
     </ul>
 
+    <!-- PUBLICATIONS -->
     <h2>Publications récentes</h2>
     <p>Liste des publications et DOI à venir.</p>
 
+    <!-- ÉQUIPE (résumé seulement) -->
     <h2>Équipe</h2>
-    <p>Présentation des membres du laboratoire.</p>
-<h2>Projets</h2>
-
-<div class="project-list">
-
-    <!-- Carte projet -->
-    <div class="project-item" onclick="toggleProject('p1')">
-        <h3>Projet 1 (2023 - 2026)</h3>
-    </div>
-
-    <!-- Détails cachés -->
-    <div id="p1" class="project-details">
-
-        <h3>Étude de la circulation hydrodynamique et des polluants</h3>
-
-        <p>
-            Approche combinée modélisation numérique et analyse de données :
-            application aux côtes tunisiennes.
-        </p>
-
-        <h4>Équipe impliquée</h4>
-        <p><strong>Responsable :</strong> Moncef Boukthir</p>
-
-        <ul>
-            <li>Jihene Abdennadher</li>
-            <li>Najet Zouari</li>
-            <li>Imen Ben Jaber</li>
-        </ul>
-
-        <h4>Résumé</h4>
-        <p>
-            Ce projet vise à comprendre la circulation hydrodynamique et son impact sur la dispersion des polluants marins...
-        </p>
-
-        <h4>Objectifs</h4>
-        <ul>
-            <li>Comprendre les mécanismes hydrodynamiques côtiers</li>
-            <li>Développer des modèles numériques couplés</li>
-            <li>Étudier la dispersion des polluants (golfe de Gabès)</li>
-            <li>Identifier les zones d’énergie marine</li>
-        </ul>
-
-    </div>
+    <p>
+        Le laboratoire regroupe des enseignants-chercheurs et doctorants spécialisés en océanographie et modélisation numérique.
+    </p>
 
 </div>
-    <p>Site en construction...</p>
 
-</div>
-<script>
-function toggleProject(id) {
-    var element = document.getElementById(id);
-
-    if (element.style.display === "block") {
-        element.style.display = "none";
-    } else {
-        element.style.display = "block";
-    }
-}
-</script>
 </body>
 </html>
