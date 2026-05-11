@@ -4,11 +4,15 @@ body {
     background-color: #f5f5f5;
     color: #333;
 }
-logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 150px;
+.header {
+    display: flex;
+    align-items: center;   /* centre verticalement */
+    gap: 20px;              /* espace entre logo et texte */
+}
+
+.logo {
+    width: 100px;          /* ajuste selon ton image */
+    height: auto;
 }
 h1 {
     color: #2c3e50;
